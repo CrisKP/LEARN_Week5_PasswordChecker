@@ -1,0 +1,19 @@
+<h1>Password Checker</h1>
+<br>
+<%= flash[:alert] %>
+<%= flash[:success] %>
+<br>
+<br>
+User ID: <%= @userid %>
+<br>
+Password: <%= @password %>
+
+<br><br>
+
+<form action="check_password" method="get">
+  <input type="text" name="userid" placeholder="User Id">
+  <br>
+  <input type="password" name="password" placeholder="Password">
+  <br>
+  <input type="submit" value="Submit">
+</form>
